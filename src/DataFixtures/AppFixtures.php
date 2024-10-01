@@ -21,14 +21,14 @@ class AppFixtures extends Fixture
         // Administateur
         $admin = new User();
         $admin->setEmail('admin@admin.fr')
-            ->setPassword('admin')
+            ->setPassword('$2y$13$uL1j7kIasILs4c7W4AWevOMO.PbwtANAzR1i5YkKrazZ0sL.KLS8K')
             ->setRoles(['ROLE_ADMIN']);
         $manager->persist($admin);
 
         // Membre de l'équipe
         $membre = new User();
         $membre->setEmail('user@user.fr')
-            ->setPassword('user')
+            ->setPassword('$2y$13$uL1j7kIasILs4c7W4AWevOMO.PbwtANAzR1i5YkKrazZ0sL.KLS8K')
             ->setRoles(['ROLE_USER']);
 
         // Clients de l'agence
